@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image "salaichitoolatt/jenkins-agent-python"}
+        label 'python-builder'
     }
     triggers {
         pollSCM("* * * * *")
